@@ -16,7 +16,6 @@ public class GeektrustApplication {
         try {
             String filePath = args[0];
             File file = new File(filePath);
-            System.out.println(filePath);
             Scanner s = new Scanner(file);
             String weather = s.next();
             Option ans = service.selectBestRoute(weather, s.nextInt(), s.nextInt());
